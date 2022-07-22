@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 @st.cache
 def get_data():
-    return pd.read_csv("Datasets/pizza.csv")
+    return pd.read_csv("pizza.csv")
 
 
 @st.cache(allow_output_mutation=True)
