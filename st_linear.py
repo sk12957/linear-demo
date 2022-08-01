@@ -22,7 +22,7 @@ promote = st.sidebar.slider("Promotion", 0, 100, 50)
 y_pred = lr.predict([[promote]])
 y_pred = int(y_pred.round())
 st.title(f"Sales: {y_pred}")
-
+st.subheader(f"y={lr.intercept_.round(2)}+x({lr.coef_[0].round(2)})")
 df = get_data()
 
 X = df['Promote'].values[:, np.newaxis]
