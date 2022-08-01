@@ -39,7 +39,7 @@ ax.annotate(f"Predicted Sales \n {promote}, {y_pred}", (promote, y_pred))
 plt.xlabel("Promote")
 plt.ylabel("Sales")
 st.pyplot(fig)
-st.subheader("Data")
+st.title("Data")
 st.dataframe(df)
 
 
